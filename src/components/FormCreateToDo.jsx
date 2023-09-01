@@ -38,21 +38,23 @@ function FormCreateToDo({getToDos}) {
     }
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <input
+    <form onSubmit={handleSubmit} className="formulario">
+     <div><input
         type="text"
         onChange={handleTitle}
         value={title}
         placeholder="title"
-      />
-      <input
+      /></div>
+     <div><input
         type="text"
         onChange={handleDescription}
         value={description}
         placeholder="description"
-      />
+      /></div>
+      <div>
       {error && <p>{error}</p>}
       <button type="submit">Create ToDo</button>
+      </div>
     </form>
   );
 }

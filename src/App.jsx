@@ -25,9 +25,11 @@ function App() {
   return (
     <div className="container">
       <div className="app">
+        <div clssName="toDo">
         <h1>App ToDo</h1>
         <FormCreateToDo getToDos={getToDos} />
         <ToDoList toDos={toDos} getToDos={getToDos} />
+        </div>
       </div>
     </div>
   );
